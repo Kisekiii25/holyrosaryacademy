@@ -1,0 +1,62 @@
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url(../../assets/hra_hero2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text{
+    text-align: center;
+    max-width: 800px;
+}
+.hero-text h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.hero-text p{
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}
+span{
+    font-family: "Caveat Brush", cursive;
+    color: rgb(93, 215, 255);
+}
+/*--------Responsive-------*/
+@media (max-width:717px) {
+    .hero-text h1{
+        font-size: 35px;
+        max-width: 600px;
+        margin: auto;
+    }
+    .hero-text p{
+        font-size: 12px;
+        max-width: 480px;
+
+    }
+    .hero-text .btn{
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+}
+@media (max-width:426px) {
+    .hero-text h1{
+        font-size: 25px;
+        max-width: 550px;
+        margin: auto;
+    }
+    .hero-text p{
+        font-size: 8px;
+        max-width: 360px;
+
+    }
+    .hero-text .btn{
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+}

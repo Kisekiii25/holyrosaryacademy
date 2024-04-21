@@ -1,0 +1,133 @@
+    .about{
+        margin: 100px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .about-left{
+        flex-basis: 40%;
+    }
+    .about-right{
+        flex-basis: 56%;
+    }
+    .about img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .about h3{
+        font-weight: 600;
+        font-weight: 16px;
+        color: #212EA0;
+    }
+    .about h2{
+        font-weight: 600;
+        font-size: 35px;
+        color: #000f38;
+        margin: 10px 0;
+    }
+    .about p{
+        color: #676767;
+        margin-bottom: 15px;
+    }
+    /*About 2*/
+    .about2{
+        margin: 100px auto;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        width: 90%;
+    }
+    .about2 img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .about2 h2{
+        font-weight: 600;
+        font-size: 35px;
+        color: #000f38;
+        margin: 15px -50px;
+    }
+    .about2 ul li{
+        color: #676767;
+        margin-bottom: 15px;
+    }
+    /*Addition*/
+    .addition{
+        margin: 100px auto;
+        align-items:center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .addition ul li{
+        color: #676767;
+        margin-bottom: 15px;
+    }
+    .addition h3{
+        font-weight: 600;
+        color: #000f38;
+        margin: 15px -50px;
+    }
+    .addition .learn{
+        color: rgb(0, 153, 255);
+    }
+    /*Goals*/
+    .goals{
+        margin: 100px auto;
+        align-items:center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .goals h2{
+        font-weight: 600;
+        color: #000f38;
+        margin: 15px -50px;
+    }
+    .goals ul li{
+        color: #676767;
+        margin-bottom: 15px;
+    }
+    .goals .list-of-list{
+        padding-left: 50px;
+    }
+    /*----------Responsive------------*/
+    @media (max-width:650px) {
+        .about, .about2{
+            flex-direction: column;
+        }
+        .about2{
+            flex-direction: none;
+        }
+        .about2 h2{
+            margin: 15px -10px;
+        }
+        .about-left{
+            flex-basis: 100%;
+            order: 2;
+            margin: 20px;
+        }
+        .about-right{
+            flex-basis: 100%;
+        }
+        .addition h3{
+            font-size: 14px;
+            margin: 20px -15px;
+        }
+        .addition ul li{
+            font-size: 13px;
+        }
+        .goals h2{  
+            margin: 20px -25px;
+            font-size: 20px;
+        }
+        .goals ul li{
+            font-size: 13px;
+        }
+        .about-right h2{
+            font-size: 20px;
+        }
+        .about-right ul li{
+            font-size: 13px;
+        }
+    }

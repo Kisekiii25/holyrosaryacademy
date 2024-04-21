@@ -1,0 +1,213 @@
+.programs{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.program img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.program{
+    flex-basis: 31%;
+    position: relative;
+}
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 15, 152, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.5s;
+}
+.program:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+    p{
+        text-decoration: underline;
+        color: rgb(0, 255, 221);
+    }
+}
+.caption span{
+    font-size: 7rem;
+    width: 100px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.caption p{
+    position: relative;
+    bottom: -130px;
+}
+.other-offer{
+    border: 5px solid #000F38;
+    padding: 5px 0 0 25px;
+}
+.offer ul{
+    align-items: start;
+    justify-content: space-around;
+}
+.offer ul li{
+    margin: 10px;
+}
+.offer h2{
+    text-align: start;
+    font-size: 2rem;
+    color: #000F38;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position:relative;
+    top: -30px;
+    background-color: #f5f5f5;
+    display: inline;
+}
+.collab h3{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.collab ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.collab ul li{
+    .deped{
+        width: 65px;
+        height: 40px;
+    }
+    .habit{
+        width: 60px;
+        height: 60px;
+    }
+    .peac{
+        width: 95px;
+        height: 35px;
+    }
+    .leader{
+        width: 100px;
+        height: 80px;
+    }
+    .wela{
+        width: 110px;
+        height: 60px;
+    }
+    .lego{
+        width: 110px;
+        height: 70px;
+    }
+}
+/*----------Responsive---------*/
+@media (max-width:1100px) {
+    .caption p{
+        position: relative;
+        bottom: -65px;
+    }
+}
+
+@media (max-width:770px) {
+    .caption p{
+        position: relative;
+        bottom: -35px;
+        font-size: small;
+    }
+    .collab ul li{
+        .deped{
+            width: 55px;
+            height: 30px;
+        }
+        .habit{
+            width: 50px;
+            height: 50px;
+        }
+        .peac{
+            width: 85px;
+            height: 25px;
+        }
+        .leader{
+            width: 90px;
+            height: 70px;
+        }
+        .wela{
+            width: 100px;
+            height: 50px;
+        }
+        .lego{
+            width: 100px;
+            height: 60px;
+        }
+    }
+}
+@media (max-width:650px) {
+    .programs{
+        flex-direction: column;
+    }
+    .program{
+        flex-basis: 100%;
+        margin: 20px 20px;
+    }
+    .program img{
+        height: 450px;
+    }
+}
+@media (max-width:430px) {
+    .collab ul li{
+        .deped{
+            width: 50px;
+            height: 25px;
+        }
+        .habit{
+            width: 45px;
+            height: 45px;
+        }
+        .peac{
+            width: 80px;
+            height: 20px;
+        }
+        .leader{
+            width: 85px;
+            height: 65px;
+        }
+        .wela{
+            width: 95px;
+            height: 45px;
+        }
+        .lego{
+            width: 95px;
+            height: 55px;
+        }
+    }
+    .program{
+        flex-basis: 100%;
+        margin: 20px 20px;
+    }
+    .program img{
+        height: 380px;
+    }
+    .other-offer{
+        padding: 0 50px;    
+    }
+    .offer{
+        padding: 0 35px;    
+    }
+    .offer ul li{
+        margin-bottom: 15px;
+    }
+    .offer h2{
+        top: -20px;
+        font-size: 25px;
+    }
+}
